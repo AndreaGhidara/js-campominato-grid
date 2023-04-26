@@ -4,13 +4,24 @@
     box-sizing: border-box;
 }
 
+:root{
+    --sizeEasy : calc(100% / 10);
+    --sizeMedium : calc(100% / 9);
+    --sizeHard : calc(100% / 7);
+
+}
+
 body{
     background-color: lightsteelblue;
     text-align: center;
 }
+header{
+    margin:1rem;
+}
 
 .container{
     width: 80%;
+    height: 100vh;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -18,13 +29,26 @@ body{
 
 .square{
     cursor: pointer;
-    width:calc(100% / 10) ;
-    height: calc(100vh / 10);
     background-color: rgb(174, 213, 89);
     border: 5px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.easySquere{
+    width:var(--sizeEasy) ;
+    height:var(--sizeEasy);
+}
+
+.mediumSquere{
+    width:var(--sizeMedium) ;
+    height:var(--sizeMedium);
+}
+
+.hardSquere{
+    width:var(--sizeHard) ;
+    height:var(--sizeHard);
 }
 
 .blue{
