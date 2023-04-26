@@ -12,6 +12,8 @@ function clicked(box) {
 
 btnCreateTable.addEventListener("click", function(){
 
+    container.innerHTML = "";
+
     difficulty = levelDifficuly.value;
 
     if (difficulty == 1) {
